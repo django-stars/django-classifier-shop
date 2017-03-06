@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+    <title>Django-Classifier Shop</title>
+    <style>
+        .product {
+            margin-bottom: 0.3em;
+        }
+        .filters a {
+            padding: 1px 3px;
+        }
+        .filters a.selected {
+            background-color: #abff9d;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        {% block content %}{% endblock %}
+    </div>
+
+    <div>
+        <hr>
+        built with help of <a href="https://django-classifier.readthedocs.io/" target="_blank">django-classifier</a>
+    </div>
+</body>
+</html>

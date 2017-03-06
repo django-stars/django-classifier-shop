@@ -1,0 +1,4 @@
+Django==1.10.6
+django-classifier==0.2.1
+elasticsearch>=5.0.0,<6.0.0
+six

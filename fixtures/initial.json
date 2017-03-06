@@ -1,0 +1,392 @@
+[
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$30000$PbO9DeKMDo8B$LxKde0B/EyvaCYXGkPiOTb0yNeUslOo/TzdODNPgzzs=",
+        "last_login": "2017-03-04T09:56:45.479Z",
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "admin@localhost",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2017-03-04T09:56:27.606Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "product.product",
+    "pk": 3,
+    "fields": {
+        "name": "Style Quotient By NOI Women's Rayon A Line Dress",
+        "price": "269.00"
+    }
+},
+{
+    "model": "product.product",
+    "pk": 4,
+    "fields": {
+        "name": "Femella Women's Green Lace bodice Midi Dress",
+        "price": "675.00"
+    }
+},
+{
+    "model": "product.product",
+    "pk": 5,
+    "fields": {
+        "name": "FabAlley Women's Georgette A-Line Dress",
+        "price": "1020.00"
+    }
+},
+{
+    "model": "product.product",
+    "pk": 6,
+    "fields": {
+        "name": "AND Women's Cotton Body Con Dress",
+        "price": "944.00"
+    }
+},
+{
+    "model": "product.product",
+    "pk": 7,
+    "fields": {
+        "name": "Mayra Women's Crepe Top",
+        "price": "299.00"
+    }
+},
+{
+    "model": "product.product",
+    "pk": 8,
+    "fields": {
+        "name": "Vvoguish Maroon Polycrepe Printed Top",
+        "price": "249.00"
+    }
+},
+{
+    "model": "product.product",
+    "pk": 9,
+    "fields": {
+        "name": "Vvoguish Dark Green Solid Top",
+        "price": "249.00"
+    }
+},
+{
+    "model": "product.product",
+    "pk": 10,
+    "fields": {
+        "name": "Mayra Women's Net Top",
+        "price": "438.00"
+    }
+},
+{
+    "model": "product.product",
+    "pk": 11,
+    "fields": {
+        "name": "Vvoguish Women's Cotton Printed Top",
+        "price": "249.00"
+    }
+},
+{
+    "model": "product.attributeclassifier",
+    "pk": 1,
+    "fields": {
+        "kind": "Size",
+        "value_type": "float",
+        "value_validator": "",
+        "only_one_required": false
+    }
+},
+{
+    "model": "product.attributeclassifier",
+    "pk": 2,
+    "fields": {
+        "kind": "Color",
+        "value_type": "str",
+        "value_validator": "",
+        "only_one_required": false
+    }
+},
+{
+    "model": "product.attributeclassifier",
+    "pk": 3,
+    "fields": {
+        "kind": "Kind",
+        "value_type": "str",
+        "value_validator": "",
+        "only_one_required": false
+    }
+},
+{
+    "model": "product.attributeclassifierlabel",
+    "pk": 1,
+    "fields": {
+        "label": "Size",
+        "required": false,
+        "classifier": 1
+    }
+},
+{
+    "model": "product.attributeclassifierlabel",
+    "pk": 2,
+    "fields": {
+        "label": "Color",
+        "required": false,
+        "classifier": 2
+    }
+},
+{
+    "model": "product.attributeclassifierlabel",
+    "pk": 3,
+    "fields": {
+        "label": "Kind",
+        "required": false,
+        "classifier": 3
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 5,
+    "fields": {
+        "product": 3,
+        "label": 1,
+        "value": "42"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 6,
+    "fields": {
+        "product": 3,
+        "label": 2,
+        "value": "white"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 7,
+    "fields": {
+        "product": 4,
+        "label": 1,
+        "value": "42"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 8,
+    "fields": {
+        "product": 4,
+        "label": 2,
+        "value": "green"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 9,
+    "fields": {
+        "product": 3,
+        "label": 3,
+        "value": "Dress"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 10,
+    "fields": {
+        "product": 4,
+        "label": 3,
+        "value": "Dress"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 11,
+    "fields": {
+        "product": 5,
+        "label": 1,
+        "value": "44"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 12,
+    "fields": {
+        "product": 5,
+        "label": 2,
+        "value": "black"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 13,
+    "fields": {
+        "product": 5,
+        "label": 3,
+        "value": "Dress"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 14,
+    "fields": {
+        "product": 6,
+        "label": 1,
+        "value": "46"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 15,
+    "fields": {
+        "product": 6,
+        "label": 2,
+        "value": "blue"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 16,
+    "fields": {
+        "product": 6,
+        "label": 3,
+        "value": "Dress"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 17,
+    "fields": {
+        "product": 7,
+        "label": 3,
+        "value": "Top"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 18,
+    "fields": {
+        "product": 7,
+        "label": 1,
+        "value": "42"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 19,
+    "fields": {
+        "product": 7,
+        "label": 2,
+        "value": "blue"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 20,
+    "fields": {
+        "product": 8,
+        "label": 3,
+        "value": "Top"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 21,
+    "fields": {
+        "product": 8,
+        "label": 1,
+        "value": "42"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 22,
+    "fields": {
+        "product": 8,
+        "label": 2,
+        "value": "Red"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 23,
+    "fields": {
+        "product": 9,
+        "label": 3,
+        "value": "Top"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 24,
+    "fields": {
+        "product": 9,
+        "label": 1,
+        "value": "44"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 25,
+    "fields": {
+        "product": 9,
+        "label": 2,
+        "value": "green"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 26,
+    "fields": {
+        "product": 10,
+        "label": 3,
+        "value": "Top"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 27,
+    "fields": {
+        "product": 10,
+        "label": 1,
+        "value": "44"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 28,
+    "fields": {
+        "product": 10,
+        "label": 2,
+        "value": "black"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 29,
+    "fields": {
+        "product": 11,
+        "label": 3,
+        "value": "Top"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 30,
+    "fields": {
+        "product": 11,
+        "label": 1,
+        "value": "44"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 31,
+    "fields": {
+        "product": 11,
+        "label": 2,
+        "value": "yellow"
+    }
+}
+]

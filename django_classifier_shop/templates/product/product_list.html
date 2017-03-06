@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="filters">
+        {% for attr in aggs %}
+            <div>
+                <b>{{ attr.label }}</b>
+                {% for option in attr.items %}
+                    <a href="{{ option.get_url }}" class="{% if option.is_selected %}selected{% endif %}">{{ option.key }}</a>
+                {% endfor %}
+            </div>
+        {% endfor %}
+    </div>
+    <hr>
+    {% for product in products %}
+        <div class="product">
+            <b>{{ product.source.name }}</b> <span>{{ product.source.price }}$</span>
+            <div>
+                {% for label, value in product.source.attrs.items %}
+                    <span>{{ label }}: {{ value }}</span>
+                {% endfor %}
+            </div>
+        </div>
+    {% endfor %}
+{% endblock content %}
